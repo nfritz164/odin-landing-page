@@ -1,1 +1,101 @@
 /* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+/* Hero styles */
+.hero {
+    display: flex;
+    background: #1F2937;
+    height: 650px;
+    flex-direction: column;
+}
+/* Header styles */
+.header {
+    height: 50px;
+    display:flex;
+    flex-direction: row;
+}
+.logo {
+    margin-left:100px;
+    justify-content: flex-start;
+}
+.links {
+    margin-right: 100px;
+    justify-content: flex-end;
+}
+.logo, .links {
+    height: 30 px;
+    flex-grow: 1;
+    margin-top:10px;
+    margin-bottom:10px;
+    display:flex;
+    flex-direction:row;
+}
+.logo p {
+    text-align:left;
+    margin: 5px;
+    color: #F9FAF8;
+    font-family: "Young Serif";
+    font-size: 24px;
+}
+.links a {
+    text-align: right;
+    margin-right:5px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:5px;
+    text-decoration: none;
+}
+/* Intro paragraph/image styles */
+.intro {
+    height: 600px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+.signup {
+    flex-grow: 1;
+    margin-left:100px;
+    margin-right: 5px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.image {
+    background: red;
+    flex-grow: 1;
+    min-width: 0;
+    margin-right:100px;
+    margin-left: 5px;
+}
+#gray {
+    min-width: 0;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+.signup, .image {
+    flex-grow: 1;
+    flex-basis:0;
+    height: 400px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.signup h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-family: "Young Serif";
+}
+.links a, .signup p {
+    color: gray;
+    font-family: "Young Serif";
+    font-size: 18px;
+}
+.signup button {
+    background: #3882F6;
+    color: white;
+    font-family: "Young Serif";
+    width: 100px;
+    border-radius:25px;
+}
+.signup h1, .signup p, .signup button {
+    flex-grow:2;
+    flex-basis:0;
+}
