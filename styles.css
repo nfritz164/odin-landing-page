@@ -4,7 +4,7 @@
 .hero {
     display: flex;
     background: #1F2937;
-    height: 650px;
+    height: 600px;
     flex-direction: column;
 }
 /* Header styles */
@@ -44,9 +44,9 @@
     margin-left:5px;
     text-decoration: none;
 }
-/* Intro paragraph/image styles */
+/* Intro paragraph and image styles */
 .intro {
-    height: 600px;
+    height: 500px;
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -65,16 +65,14 @@
     min-width: 0;
     margin-right:100px;
     margin-left: 5px;
+    display:flex;
 }
-#gray {
+.gray {
     min-width: 0;
-    flex-grow: 1;
-    flex-basis: 0;
 }
 .signup, .image {
     flex-grow: 1;
     flex-basis:0;
-    height: 400px;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -82,6 +80,7 @@
     font-size: 48px;
     color: #F9FAF8;
     font-family: "Young Serif";
+    padding:0
 }
 .links a, .signup p {
     color: gray;
@@ -94,8 +93,12 @@
     font-family: "Young Serif";
     width: 100px;
     border-radius:25px;
+    height:auto;
 }
-.signup h1, .signup p, .signup button {
-    flex-grow:2;
+
+.signup h1, .signup p{
+    flex-grow:1;
     flex-basis:0;
+    padding:0;
+    margin:0;
 }
